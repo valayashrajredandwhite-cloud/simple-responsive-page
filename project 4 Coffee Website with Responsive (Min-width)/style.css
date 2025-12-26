@@ -1,0 +1,65 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+/* Flex container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Card */
+.card {
+    width: 200px;
+    border: 2px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Image fitting */
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Discount badge */
+.offer {
+    background-color: brown;
+    color: white;
+    font-size: 12px;
+    padding: 3px;
+    float: left;
+}
+
+/* Text */
+.card p {
+    margin-top: 10px;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+
+/* 🔑 RESPONSIVE (BEST PART) */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+}
